@@ -1,3 +1,4 @@
+# English
 # Automatic Backup Script
 
 This Python script is designed to perform automatic backups of files or directories at regular intervals. The backups are saved in a destination folder with a unique name based on a timestamp.
@@ -36,3 +37,45 @@ If you want to back up a folder `my_folder` to a backup directory `my_backups` e
 source = 'path/to/my_folder'
 destination = 'path/to/my_backups'
 interval_seconds = 7200
+```
+---
+#Português
+# Script de Backup Automático
+
+Este script em Python foi projetado para realizar backups automáticos de arquivos ou diretórios em intervalos regulares. Os backups são salvos em uma pasta de destino com um nome único baseado em um timestamp.
+
+## Características:
+- Copia automaticamente arquivos ou diretórios de uma origem especificada para um destino.
+- Cada backup é salvo em uma pasta única com um timestamp (por exemplo, `backup_20241214_153000`).
+- O processo de backup é executado em intervalos regulares (configuráveis).
+- Fácil de configurar e usar com configuração mínima.
+
+## Requisitos:
+- Python 3.x
+- Bibliotecas `shutil` e `os` (incluídas por padrão no Python)
+
+## Instalação:
+1. Clone este repositório ou baixe o script para sua máquina local.
+2. Certifique-se de ter o Python 3.x instalado.
+3. Instale as dependências necessárias (se houver) usando `pip` (embora o script deva funcionar com a instalação padrão do Python).
+
+## Configuração:
+Para usar o script, você precisará configurar as seguintes variáveis no código:
+
+1. **source:** O caminho para o diretório ou arquivo que você deseja fazer o backup. Substitua `'path/to/your/source_directory_or_file'` pelo caminho real.
+2. **destination:** O caminho para o diretório onde os backups serão armazenados. Substitua `'path/to/your/backup_directory'` pelo caminho real de destino.
+3. **interval_seconds:** O intervalo de tempo entre os backups, em segundos. Por exemplo, configurá-lo para `3600` fará o backup a cada hora.
+
+## Uso:
+
+1. Modifique as variáveis `source`, `destination` e `interval_seconds` no script conforme necessário.
+2. Execute o script. Ele começará a fazer backups nos intervalos especificados.
+3. O script continuará a ser executado indefinidamente, fazendo backups nos intervalos especificados, até ser interrompido manualmente.
+
+### Exemplo:
+Se você deseja fazer backup de uma pasta `my_folder` para um diretório de backups `my_backups` a cada 2 horas (7200 segundos), configure:
+```python
+source = 'path/to/my_folder'
+destination = 'path/to/my_backups'
+interval_seconds = 7200
+```
