@@ -1,4 +1,4 @@
-# English
+# English :us:
 # Automatic Backup Script
 
 This Python script is designed to perform automatic backups of files or directories at regular intervals. The backups are saved in a destination folder with a unique name based on a timestamp.
@@ -39,7 +39,7 @@ destination = 'path/to/my_backups'
 interval_seconds = 7200
 ```
 ---
-# Português
+# Português :brazil:
 # Script de Backup Automático
 
 Este script em Python foi projetado para realizar backups automáticos de arquivos ou diretórios em intervalos regulares. Os backups são salvos em uma pasta de destino com um nome único baseado em um timestamp.
